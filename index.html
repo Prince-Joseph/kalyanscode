@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="icon" type="image/png" href="/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat&family=Playfair+Display&family=Roboto&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <div class="nav-title">GPA CALCULATOR</div>
+            <!-- <div class="nav-links">
+                <a href="">CGPA</a>
+                <a href="">SGPA</a>
+            </div> -->
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="sec1">
+
+            <div class="intro">
+                <p>
+                    Welcome to our website, where calculating your academic performance has never been easier! We
+                    understand
+                    the
+                    importance of keeping track of your grades, and that's why we've created this tool to help you
+                    calculate
+                    your SGPA and CGPA effortlessly.
+                </p>
+
+                <p>
+                    SGPA (Semester Grade Point Average) is a measure of your academic performance in a single semester,
+                    whereas
+                    CGPA (Cumulative Grade Point Average) reflects your overall academic performance throughout your
+                    academic
+                    career.
+                </p>
+
+                <p>
+                    With our user-friendly interface, you can easily input your grades and credit hours for each
+                    semester,
+                    and
+                    let our calculator do the rest. Our tool will provide you with accurate calculations for both your
+                    SGPA
+                    and
+                    CGPA, allowing you to monitor your academic progress and make informed decisions about your future.
+                </p>
+
+                <p>
+                    Whether you're a student, a parent, or an educator, our GPA calculator is an essential tool for
+                    everyone
+                    who
+                    values academic excellence. So why wait? Start calculating your GPA today and take the first step
+                    towards
+                    achieving your academic goals!
+                </p>
+            </div>
+
+            <div class="main-links">
+                <button>
+                    <a href="#sec-2">CALCULATE</a>
+                </button>
+            </div>
+        </section>
+
+        <section class="sec2" id="sec-2">
+
+
+            <div class="result-container">
+                <div class="gpa-result result-fonts">
+                    <h1>GPA : </h1>
+                    <p id="gpa-cont"></p>
+                </div>
+                <div class="total-credits result-fonts">
+                    <h1>Total Credits : </h1>
+                    <p id="tc-cont"></p>
+                </div>
+                <div class="clear">
+                    <button onClick="window.location.reload();">Clear</button>
+                </div>
+            </div>
+
+
+            <div class="cgpa-calc-container">
+
+                <div class="grades-num">
+                    <span class="badge bg-1"> <strong>O</strong> : 10</span>
+                    <span class="badge bg-1"> <strong>A+</strong> : 9</span>
+                    <span class="badge bg-1"> <strong>A</strong> : 8</span>
+                    <span class="badge bg-2"> <strong>B+</strong> : 7</span>
+                    <span class="badge bg-2"> <strong>B</strong> : 6</span>
+                    <span class="badge bg-2"> <strong>C</strong> : 5</span>
+                    <span class="badge bg-3"> <strong>F</strong> : 0</span>
+                </div>
+
+                <div class="row justify-content-center" id="fullform">
+                    <div class="grade-input-container">
+                        <strong>
+                            Grades <small id="smally">or SGPA</small>
+                        </strong>
+                        <input type="number" class="grades-input" placeholder="" id="s0" />
+                        <input type="number" class="grades-input" placeholder="" id="s1" />
+                        <input type="number" class="grades-input" placeholder="" id="s2" />
+                        <input type="number" class="grades-input" placeholder="" id="s3" />
+                        <input type="number" class="grades-input" placeholder="" id="s4" />
+                        <input type="number" class="grades-input" placeholder="" id="s5" />
+                        <input type="number" class="grades-input" placeholder="" id="s6" />
+                        <input type="number" class="grades-input" placeholder="" id="s7" />
+                        <input type="number" class="grades-input" placeholder="" id="s8" />
+                        <input type="number" class="grades-input" placeholder="" id="s9" />
+                    </div>
+                    <div class="credits-input-container">
+                        <strong>
+                            Credits <small id="smally">or TCS</small>
+                        </strong>
+                        <input type="number" class="form-control form-control-sm spx credits-input" placeholder=""
+                            id="s0" />
+                        <input type="number" class="form-control form-control-sm spx credits-input" placeholder=""
+                            id="s1" />
+                        <input type="number" class="form-control form-control-sm spx credits-input" placeholder=""
+                            id="s2" />
+                        <input type="number" class="form-control form-control-sm spx credits-input" placeholder=""
+                            id="s3" />
+                        <input type="number" class="form-control form-control-sm spx credits-input" placeholder=""
+                            id="s4" />
+                        <input type="number" class="form-control form-control-sm spx credits-input" placeholder=""
+                            id="s5" />
+                        <input type="number" class="form-control form-control-sm spx credits-input" placeholder=""
+                            id="s6" />
+                        <input type="number" class="form-control form-control-sm spx credits-input" placeholder=""
+                            id="s7" />
+                        <input type="number" class="form-control form-control-sm spx credits-input" placeholder=""
+                            id="s8" />
+                        <input type="number" class="form-control form-control-sm spx credits-input" placeholder=""
+                            id="s9" />
+                    </div>
+                </div>
+                <div class="main-links">
+                    <button>
+                        <a id="submit">SUBMIT</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
